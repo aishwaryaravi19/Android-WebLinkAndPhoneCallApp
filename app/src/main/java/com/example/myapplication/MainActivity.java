@@ -51,8 +51,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void call_to_phone(View view) {
         this.view = view;
-        //Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:".concat(phone.toString())));
-        Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:6692502248"));
+        Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:".concat(phone.toString())));
+       
         if (checkSelfPermission(Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
             // TODO: Consider calling
             //    Activity#requestPermissions
